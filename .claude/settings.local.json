@@ -18,7 +18,8 @@
       "Bash(python3 -c ' *)",
       "Bash(python3 fix_paths.py)",
       "Bash(grep -n 'href=\"/\\\\|src=\"/' index.html menus/sushi-sashimi/index.html private-dining/index.html)",
-      "Bash(python3 add_menu_images.py)"
+      "Bash(python3 add_menu_images.py)",
+      "Bash(grep -v \"^\\\\./\\\\.git\")"
     ]
   }
 }
