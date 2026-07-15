@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.fifthavenuesushi.ca/</loc><priority>1.0</priority></url>
+  <url><loc>https://www.fifthavenuesushi.ca/menus/</loc><priority>0.9</priority></url>
+  <url><loc>https://www.fifthavenuesushi.ca/reservations/</loc><priority>0.9</priority></url>
+  <url><loc>https://www.fifthavenuesushi.ca/gallery/</loc><priority>0.6</priority></url>
+  <url><loc>https://www.fifthavenuesushi.ca/location-hours/</loc><priority>0.8</priority></url>
+  <url><loc>https://www.fifthavenuesushi.ca/faq/</loc><priority>0.6</priority></url>
+</urlset>
+<!--
+  The following pages exist but are intentionally excluded from this sitemap
+  because they are marked noindex (placeholder content pending confirmation):
+  /menus/sushi-sashimi/, /menus/sushi-bar/, /menus/kitchen-hot/,
+  /menus/drinks-sake/, /menus/lunch/, /menus/dessert/,
+  /our-chef/, /our-story/, /private-dining/, /large-groups-corporate/, /blog/
+  Add each to this file and remove its noindex tag once real content lands.
+-->

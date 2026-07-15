@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"C:\\\\Users\\\\ari\\\\Documents\\\\Website.git\\\\ineractive\\\\.claude\")",
+      "WebSearch",
+      "WebFetch(domain:www.fifthavenuesushi.ca)",
+      "Bash(ls -la ~/.claude/projects/ 2>&1 | head -30)",
+      "Bash(awk '{print $2}')",
+      "Read(//tmp/**)",
+      "Bash(cd /tmp)",
+      "Bash(python3 -)",
+      "Bash(python3 -c \"import sys; print\\(sys.platform\\)\")",
+      "Bash(sed -E 's#^/c/#C:/#' recent_transcripts.txt)",
+      "Bash(cat /tmp/agg_out.txt)",
+      "Bash(python3 gen_pages.py)",
+      "Bash(python3 gen_pages2.py)",
+      "Bash(python3 gen_pages3.py)",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 fix_paths.py)",
+      "Bash(grep -n 'href=\"/\\\\|src=\"/' index.html menus/sushi-sashimi/index.html private-dining/index.html)",
+      "Bash(python3 add_menu_images.py)"
+    ]
+  }
+}
