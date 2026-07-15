@@ -4,11 +4,11 @@ window.addEventListener('load', () => {
   setTimeout(() => preloader.classList.add('done'), 500);
 });
 
-// Nav scroll state
+// Nav scroll state (passive listener so scrolling never waits on JS)
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 40);
-});
+}, { passive: true });
 
 // Mobile menu
 const navBurger = document.getElementById('navBurger');

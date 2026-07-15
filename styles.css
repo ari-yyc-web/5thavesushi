@@ -77,7 +77,8 @@ em{font-style:italic;color:var(--gold-light);}
   z-index:9998;
   opacity:0.035;
   background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
-  mix-blend-mode:overlay;
+  transform:translateZ(0);
+  will-change:transform;
 }
 
 /* cursor dot (desktop only) */
@@ -810,6 +811,7 @@ section{position:relative;}
   .nav-links, .nav-cta{display:none;}
   .nav-burger{display:flex;}
   .mobile-menu{display:flex;}
+  .hero-reserve-btn{display:none;}
   .nav{padding:calc(18px + var(--safe-t)) calc(20px + var(--safe-r)) 18px calc(20px + var(--safe-l));}
   .hero-content{padding:0 24px 80px;}
   .section-head{padding:90px 24px 40px;}
