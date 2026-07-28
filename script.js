@@ -80,6 +80,40 @@ document.querySelectorAll('form[data-mock-submit]').forEach(form => {
   });
 });
 
+// Menu jump chips — highlight the group you're currently reading.
+// The menu pages run ~10 phone screens, so without this the sticky chip strip
+// gives no clue where you are. Guarded: other pages have no chips.
+const dishJump = document.querySelector('.dish-jump');
+if (dishJump) {
+  const chips = new Map();
+  dishJump.querySelectorAll('a').forEach(a => {
+    const group = document.querySelector(a.getAttribute('href'));
+    if (group) chips.set(group, a);
+  });
+
+  let current = null;
+  const setActive = (chip) => {
+    if (chip === current) return;
+    if (current) current.classList.remove('is-active');
+    chip.classList.add('is-active');
+    current = chip;
+    // Keep the active chip in view in the horizontally scrolling strip.
+    chip.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: 'smooth' });
+  };
+
+  // Topmost group intersecting the band just below the nav wins.
+  const spy = new IntersectionObserver((entries) => {
+    const visible = entries.filter(e => e.isIntersecting);
+    if (!visible.length) return;
+    const top = visible.reduce((a, b) =>
+      a.boundingClientRect.top < b.boundingClientRect.top ? a : b);
+    const chip = chips.get(top.target);
+    if (chip) setActive(chip);
+  }, { rootMargin: '-140px 0px -55% 0px', threshold: 0 });
+
+  chips.forEach((_, group) => spy.observe(group));
+}
+
 // FAQ accordion
 document.querySelectorAll('.faq-item').forEach(item => {
   const q = item.querySelector('.faq-question');

@@ -1,0 +1,60 @@
+# Cloudflare Workers Assets header rules.
+#
+# Content-Type is set per-page rather than with a /* wildcard on purpose: a
+# wildcard would also stamp text/html onto styles.css, script.js and every
+# image under /img/, breaking them. Each HTML route is listed explicitly.
+#
+# Charset belongs in the header (not just the <meta> tag) because the HTTP
+# header wins over the document when the two disagree, and crawlers that read
+# headers only will otherwise have to guess the encoding.
+
+/
+  Content-Type: text/html; charset=utf-8
+
+/menus/
+  Content-Type: text/html; charset=utf-8
+
+/menus/sushi-sashimi/
+  Content-Type: text/html; charset=utf-8
+
+/menus/sushi-bar/
+  Content-Type: text/html; charset=utf-8
+
+/menus/kitchen-hot/
+  Content-Type: text/html; charset=utf-8
+
+/menus/drinks-sake/
+  Content-Type: text/html; charset=utf-8
+
+/menus/lunch/
+  Content-Type: text/html; charset=utf-8
+
+/menus/dessert/
+  Content-Type: text/html; charset=utf-8
+
+/our-chef/
+  Content-Type: text/html; charset=utf-8
+
+/our-story/
+  Content-Type: text/html; charset=utf-8
+
+/private-dining/
+  Content-Type: text/html; charset=utf-8
+
+/large-groups-corporate/
+  Content-Type: text/html; charset=utf-8
+
+/gallery/
+  Content-Type: text/html; charset=utf-8
+
+/location-hours/
+  Content-Type: text/html; charset=utf-8
+
+/faq/
+  Content-Type: text/html; charset=utf-8
+
+/blog/
+  Content-Type: text/html; charset=utf-8
+
+/reservations/
+  Content-Type: text/html; charset=utf-8

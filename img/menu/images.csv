@@ -1,0 +1,61 @@
+﻿file,name,category,price,description,width,height,kb
+sushi-rolls/spicy-salmon-roll-8-pcs.jpg,Spicy Salmon Roll (8 pcs),Sushi Rolls,14,Salmon with a spicy kick rolled in nori and sushi rice.,600,800,73
+sushi-rolls/salmon-roll-8-pcs.jpg,Salmon Roll (8 pcs),Sushi Rolls,12,,600,800,70
+sushi-rolls/spicy-tuna-roll-8-pcs.jpg,Spicy Tuna Roll (8 pcs),Sushi Rolls,12,,600,800,134
+sushi-rolls/california-roll-8-pcs.jpg,California Roll (8 pcs),Sushi Rolls,10,,600,800,45
+sushi-rolls/tuna-roll-8-pcs.jpg,Tuna Roll (8 pcs),Sushi Rolls,10,Tuna maki roll with sushi rice and nori.,600,800,82
+sushi-rolls/yam-avocado-roll-8-pcs.jpg,Yam Avocado Roll (8 pcs),Sushi Rolls,15,,600,800,80
+sushi-rolls/rainbow-roll-8-pcs.jpg,Rainbow Roll (8 pcs),Sushi Rolls,18,Rainbow-style roll with a colourful assortment of toppings.,600,800,49
+sushi-rolls/avocado-roll-8-pcs.jpg,Avocado Roll (8 pcs),Sushi Rolls,10,Sushi rice and nori rolled with avocado.,600,800,66
+sushi-rolls/cucumber-roll-8-pcs.jpg,Cucumber Roll (8 pcs),Sushi Rolls,10,Cucumber maki: cucumber and sushi rice rolled in nori.,600,800,55
+sashimi/deluxe-sashimi-8-pcs.jpg,Deluxe Sashimi (8 pcs),Sashimi,36,1 of each type.,600,800,77
+sashimi/ebi-sashimi-2-pcs.jpg,Ebi Sashimi (2 pcs),Sashimi,8,"Raw shrimp sashimi, served chilled.",600,800,76
+sashimi/salmon-sashimi-2-pcs.jpg,Salmon Sashimi (2 pcs),Sashimi,8,,600,800,75
+sashimi/smoked-salmon-sashimi-2-pcs.jpg,Smoked Salmon Sashimi (2 pcs),Sashimi,8,"Tender texture with a rich, smoky flavour.",600,800,89
+sashimi/unagi-sashimi-2-pcs.jpg,Unagi Sashimi (2 pcs),Sashimi,9,"Eel sashimi, thinly sliced.",600,800,81
+sashimi/tuna-sashimi-2-pcs.jpg,Tuna Sashimi (2 pcs),Sashimi,8,Thinly sliced raw tuna sashimi.,600,800,74
+sushi-nigiri/gungkan-crab-sushi-1-pc.jpg,Gungkan Crab Sushi (1 pc),Sushi (Nigiri),4,"Seaweed-wrapped sushi rice topped with crab, gunkan style.",600,800,26
+sushi-nigiri/gungkan-tobiko-sushi-1-pc.jpg,Gungkan Tobiko Sushi (1 pc),Sushi (Nigiri),4,,600,800,23
+sushi-nigiri/shrimp-sushi-1-pc.jpg,Shrimp Sushi (1 pc),Sushi (Nigiri),3,,600,800,54
+sushi-nigiri/smoked-salmon-sushi-1-pc.jpg,Smoked Salmon Sushi (1 pc),Sushi (Nigiri),4,,600,800,76
+sushi-nigiri/unagi-sushi-1-pc.jpg,Unagi Sushi (1 pc),Sushi (Nigiri),4,Cooked freshwater eel over seasoned sushi rice.,600,800,80
+sushi-nigiri/salmon-sushi-1-pc.jpg,Salmon Sushi (1 pc),Sushi (Nigiri),4,,600,800,47
+sushi-nigiri/tuna-sushi-1-pc.jpg,Tuna Sushi (1 pc),Sushi (Nigiri),3,,600,800,69
+sushi-nigiri/deluxe-sushi-9-pcs.jpg,Deluxe Sushi (9 pcs),Sushi (Nigiri),35,1 of each type.,600,800,99
+special-rolls/flying-eel-dragon-roll-8-pcs.jpg,Flying Eel Dragon Roll (8 pcs),Special Rolls,25,"Eel, shrimp, avocado, cucumber, unagi, mayo, tobiko.",600,800,86
+special-rolls/lobster-roll-8-pcs.jpg,Lobster Roll (8 pcs),Special Rolls,26,"Lobster, cucumber, avocado, unagi, mayo.",600,800,139
+special-rolls/red-smoked-dragon-roll-8-pcs.jpg,Red Smoked Dragon Roll (8 pcs),Special Rolls,25,"Smoked salmon, avocado, cucumber, unagi, mayo, tobiko, sriracha, crispy onion.",600,800,96
+special-rolls/crispy-beef-roll-8-pcs.jpg,Crispy Beef Roll (8 pcs),Special Rolls,22,"Beef, unagi, spicy mayo, crispy onion.",600,800,63
+special-rolls/crispy-california-roll-8-pcs.jpg,Crispy California Roll (8 pcs),Special Rolls,15,"Crab meat, avocado, tempura, spicy mayo, cucumber.",600,800,83
+special-rolls/5th-avenue-signature-roll-8-pcs.jpg,5th Avenue Signature Roll (8 pcs),Special Rolls,28,"Salmon, tuna, avocado, tempura crispy onions, tobiko.",600,800,56
+mains/lemon-garlic-snapper.jpg,Lemon Garlic Snapper,Mains,28,Comes with rice and mixed vegetables.,600,800,83
+mains/teppanyaki-ny-steak-7-oz.jpg,Teppanyaki NY Steak (7 oz),Mains,40,Comes with rice and mixed vegetables.,600,800,108
+mains/teriyaki-chicken.jpg,Teriyaki Chicken,Mains,25,Comes with rice and mixed vegetables.,600,800,92
+mains/teriyaki-salmon.jpg,Teriyaki Salmon,Mains,30,Comes with rice and mixed vegetables.,600,800,113
+mains/wafu-bifu-ny-steak-7-oz.jpg,Wafu Bifu NY Steak (7 oz),Mains,42,Comes with rice and mixed vegetables.,600,800,103
+mains/poke-bowl.jpg,Poke Bowl,Mains,25,"Sushi rice, salmon, tuna, crab, shrimp, tobiko, mixed greens, medium poached egg.",600,800,72
+mains/kakuni-braised-pork.jpg,Kakuni Braised Pork,Mains,28,Comes with rice and mixed vegetables.,600,800,102
+ramen/shoyu-ramen.jpg,Shoyu Ramen,Ramen,23,Ramen noodles in an umami soy sauce broth.,600,800,85
+appetizers/calamari.jpg,Calamari,Appetizers,13,Seafood appetizer featuring squid.,600,800,116
+appetizers/house-salad.jpg,House Salad,Appetizers,10,Appetizer portion.,600,800,82
+appetizers/shrimp-tempura-6-pcs.jpg,Shrimp Tempura (6 pcs),Appetizers,15,Shrimp coated in light tempura batter and fried until crisp.,600,800,73
+appetizers/tuna-tataki.jpg,Tuna Tataki,Appetizers,18,"Lightly seared tuna, thinly sliced with a rare center.",600,800,82
+appetizers/yakitori-chicken.jpg,Yakitori Chicken,Appetizers,12,Japanese-style grilled chicken skewers.,600,800,93
+appetizers/yam-tempura.jpg,Yam Tempura,Appetizers,13,"Sliced yam in tempura batter, fried until crisp.",600,800,71
+appetizers/gyoza-aaa-alberta-beef-5-pcs.jpg,Gyoza AAA Alberta Beef (5 pcs),Appetizers,12,,600,800,67
+appetizers/edamame.jpg,Edamame,Appetizers,8,Young soybeans in the pod.,600,800,83
+appetizers/chicken-karaage.jpg,Chicken Karaage,Appetizers,13,Crispy Japanese-style fried chicken bites.,600,800,99
+appetizers/crispy-shrimp-5-pcs.jpg,Crispy Shrimp (5 pcs),Appetizers,15,,600,800,100
+appetizers/pork-kakuni.jpg,Pork Kakuni,Appetizers,12,"Japanese-style braised pork, slow-cooked until tender.",600,800,95
+appetizers/vegetable-tempura.jpg,Vegetable Tempura,Appetizers,10,"Assorted vegetables in a light, crisp tempura batter.",600,800,87
+appetizers/agedashi-tofu.jpg,Agedashi Tofu,Appetizers,11,Lightly fried tofu served in a warm soy-dashi broth.,600,800,91
+appetizers/pickled-cucumbers.jpg,Pickled Cucumbers,Appetizers,8,Cucumbers pickled in a tangy brine.,600,800,79
+appetizers/takoyaki-5-pcs.jpg,Takoyaki (5 pcs),Appetizers,11,,600,800,85
+stir-fry/beef-udon.jpg,Beef Udon,Stir-Fry,24,,600,800,93
+stir-fry/shrimp-udon.jpg,Shrimp Udon,Stir-Fry,24,,600,800,97
+stir-fry/vegetable-yakisoba.jpg,Vegetable Yakisoba,Stir-Fry,15,,600,800,92
+stir-fry/chicken-yakisoba.jpg,Chicken Yakisoba,Stir-Fry,21,,600,800,92
+rice/steamed-rice-1-cup.jpg,Steamed Rice (1 Cup),Rice,4,,600,800,78
+rice/yakimeshi-rice.jpg,Yakimeshi Rice,Rice,16,"Shoyu, egg, green onion, sesame oil, corn.",600,800,53
+bento-box-lunch-only/bento-plate-b.jpg,Bento Plate B,Bento Box (Lunch Only),33,"Salmon nigiri (1 pc), tuna nigiri (1 pc), California roll (4 pcs), and protein with rice & veggies stir-fry. Served with miso soup and house salad.",600,800,93
+bento-box-lunch-only/bento-plate-a.jpg,Bento Plate A,Bento Box (Lunch Only),31,"Salmon nigiri (1 pc), tuna nigiri (1 pc), ebi nigiri (1 pc), salmon sashimi (1 pc), tuna sashimi (1 pc), California roll (4 pcs). Served with miso soup and house salad.",600,800,71
