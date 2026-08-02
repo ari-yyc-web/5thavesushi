@@ -6,12 +6,14 @@
   <url><loc>https://www.fifthavenuesushi.ca/gallery/</loc><lastmod>2026-08-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.fifthavenuesushi.ca/location-hours/</loc><lastmod>2026-08-01</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.fifthavenuesushi.ca/faq/</loc><lastmod>2026-08-01</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.fifthavenuesushi.ca/our-chef/</loc><lastmod>2026-08-02</lastmod><priority>0.7</priority></url>
 </urlset>
 <!--
   The following pages exist but are intentionally excluded from this sitemap
   because they are marked noindex (placeholder content pending confirmation):
   /menus/sushi-sashimi/, /menus/sushi-bar/, /menus/kitchen-hot/,
   /menus/drinks-sake/, /menus/lunch/, /menus/dessert/,
-  /our-chef/, /our-story/, /private-dining/, /large-groups-corporate/, /blog/
+  /our-story/, /private-dining/, /large-groups-corporate/, /blog/
   Add each to this file and remove its noindex tag once real content lands.
+  (/our-chef/ was signed off 2026-08-02 — now indexed and listed above.)
 -->
