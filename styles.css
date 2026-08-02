@@ -316,6 +316,7 @@ em{font-style:italic;color:var(--gold-light);}
   text-transform:uppercase;
   transition:background .35s var(--ease), color .35s var(--ease), border-color .35s var(--ease);
   border:1px solid transparent;
+  border-radius:999px;
 }
 .btn-light{background:var(--cream);color:var(--black);}
 .btn-light:hover{background:transparent;color:var(--cream);border-color:var(--cream);}
@@ -738,9 +739,9 @@ section{position:relative;}
   font-size:0.78rem;
   letter-spacing:0.08em;
   text-transform:uppercase;
-  border-radius:12px;
+  border-radius:999px;
 }
-.sticky-cta-call{border:1px solid var(--line);color:var(--cream);}
+.sticky-cta-call{background:var(--charcoal);border:1px solid var(--line);color:var(--cream);}
 .sticky-cta-reserve{background:var(--gold-light);color:var(--black);}
 
 /* ===== generic content sections (sub-pages) ===== */
