@@ -69,14 +69,47 @@ window.addEventListener('load', () => {
   });
 });
 
-// Reservation / inquiry forms (guarded — not every page has one)
-document.querySelectorAll('form[data-mock-submit]').forEach(form => {
+// Inquiry forms — real submission to a form endpoint (Formspree or similar).
+// Guarded: not every page has one. Success is shown ONLY after the endpoint
+// actually accepts the submission — never optimistically — so a guest is never
+// told "received" when nothing was sent. If the endpoint is missing or still the
+// placeholder, or the request fails, we surface an error and point to the phone.
+document.querySelectorAll('form[data-async-submit]').forEach(form => {
   const success = form.querySelector('.form-success');
-  form.addEventListener('submit', (e) => {
+  const errorEl = form.querySelector('.form-error');
+  const btn = form.querySelector('[type="submit"]');
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    if (success) success.classList.add('show');
-    form.reset();
-    if (success) setTimeout(() => success.classList.remove('show'), 6000);
+    if (success) success.classList.remove('show');
+    if (errorEl) errorEl.classList.remove('show');
+
+    const endpoint = form.getAttribute('action');
+    if (!endpoint || /YOUR_FORM_ID/.test(endpoint)) {
+      // Not configured yet — fail loudly instead of faking success.
+      if (errorEl) errorEl.classList.add('show');
+      return;
+    }
+
+    const label = btn ? btn.textContent : '';
+    if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+    try {
+      const res = await fetch(endpoint, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        if (success) success.classList.add('show');
+        form.reset();
+        if (success) setTimeout(() => success.classList.remove('show'), 8000);
+      } else {
+        if (errorEl) errorEl.classList.add('show');
+      }
+    } catch (err) {
+      if (errorEl) errorEl.classList.add('show');
+    } finally {
+      if (btn) { btn.disabled = false; btn.textContent = label; }
+    }
   });
 });
 
