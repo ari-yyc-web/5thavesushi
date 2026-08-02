@@ -8,6 +8,11 @@
  *   http://…            → https://…            (301)
  *   https://fifthavenuesushi.ca/…  → https://www.fifthavenuesushi.ca/…  (301)
  *
+ * It also maps a couple of short / legacy paths to their real destinations:
+ *
+ *   /ordering  → OpenTable reservations (301)
+ *   /menu      → /menus/               (301)
+ *
  * Everything else falls straight through to the ASSETS binding unchanged.
  *
  * NOTE: for the apex (non-www) redirect to actually fire, BOTH
@@ -15,6 +20,14 @@
  * Worker as custom domains/routes in the Cloudflare dashboard.
  */
 const CANONICAL_HOST = "www.fifthavenuesushi.ca";
+const OPENTABLE = "https://www.opentable.com/r/fifth-avenue-sushi-calgary";
+
+// Short/legacy path → destination (absolute URL, or site-relative path).
+// Keys are matched lowercase with any trailing slash removed.
+const PATH_REDIRECTS = {
+  "/ordering": OPENTABLE,
+  "/menu": "/menus/",
+};
 
 export default {
   async fetch(request, env) {
@@ -33,6 +46,14 @@ export default {
 
     if (changed) {
       return Response.redirect(url.toString(), 301);
+    }
+
+    // Short / legacy path redirects (e.g. /ordering, /menu).
+    const key = url.pathname.replace(/\/+$/, "").toLowerCase() || "/";
+    if (PATH_REDIRECTS[key]) {
+      const dest = PATH_REDIRECTS[key];
+      const target = dest.startsWith("http") ? dest : new URL(dest, url).toString();
+      return Response.redirect(target, 301);
     }
 
     return env.ASSETS.fetch(request);
