@@ -58,3 +58,7 @@
 
 /reservations/
   Content-Type: text/html; charset=utf-8
+
+# Plain-text AI-guidance file (markdown body, UTF-8 chars like ★ / —).
+/llms.txt
+  Content-Type: text/plain; charset=utf-8

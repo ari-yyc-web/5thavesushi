@@ -14,8 +14,10 @@ Plain HTML/CSS/JS, no build framework. Deployed to **Cloudflare Workers assets**
   shared by every page (root pages link `styles.css`; nested pages use `../` / `../../`).
 - Header nav, mobile menu, and footer are **hand-duplicated** into every page. Change one →
   change all. Bulk edits across footers are easiest via a small Node script.
-- `img/menu/**` — local dish photos (see provenance note below). Most hero/gallery/section
-  images are remote Unsplash stock.
+- All images are **local WebP** (as of 2026-08-01). `img/menu/**` — dish photos (see
+  provenance note below). `img/photos/**` — hero/gallery/section photos, downloaded from
+  Unsplash and stored locally as WebP (filename = `<photo-id>-w<width>.webp`). Only the
+  favicons/app-icons remain PNG/ICO/SVG (required formats). Nothing loads remote images.
 
 ## Menu pages are generated — do not hand-edit
 
@@ -44,6 +46,17 @@ block get overwritten. `menu-data.js` is also the source of the Menu JSON-LD.
   to `sitemap.xml` together when real content is signed off.
 - `_headers` sets `Content-Type` per HTML route explicitly (a `/*` wildcard would break
   css/js/images) — add a new route here whenever you add a new page.
+- **AI search / Bing:** `llms.txt` (root, markdown summary for LLMs — keep NAP/hours in
+  sync with the site), `robots.txt` explicitly welcomes AI crawlers (no Disallow rules),
+  homepage Restaurant JSON-LD carries `geo`/`hasMap`, and geo meta tags live on `/` and
+  `/location-hours/`. IndexNow key file is `072c38759714658a1a6f6e08ca24393b.txt` (root);
+  run `node indexnow-submit.js` after each deploy to ping Bing (which also feeds ChatGPT
+  search). When you add/rename an indexed page, update `sitemap.xml` then re-run that script.
+- **Canonical host:** `worker.js` (wired via `main` + `binding=ASSETS` + `run_worker_first`
+  in `wrangler.toml`) 301-redirects non-www→www and http→https, then serves assets. For the
+  apex redirect to fire, BOTH `fifthavenuesushi.ca` and `www.` must be attached to the Worker
+  as custom domains in Cloudflare. This fixes the Seobility "Server config 0%" duplicate-host
+  finding — but only after deploy.
 
 ## Known pre-launch gaps (owner actions, not code)
 

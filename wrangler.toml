@@ -1,5 +1,10 @@
 name = "5thavesushi"
+main = "worker.js"
 compatibility_date = "2026-07-15"
 
 [assets]
 directory = "./"
+binding = "ASSETS"
+# Run the redirect worker before serving static assets so the www/non-www and
+# http/https 301s fire even for asset paths like "/" and "/styles.css".
+run_worker_first = true
