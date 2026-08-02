@@ -12,6 +12,7 @@
  *
  *   /ordering  → OpenTable reservations (301)
  *   /menu      → /menus/               (301)
+ *   /blank     → /  (fallback for a stray Google Ads sitelink that 404'd)
  *
  * Everything else falls straight through to the ASSETS binding unchanged.
  *
@@ -27,6 +28,7 @@ const OPENTABLE = "https://www.opentable.com/r/fifth-avenue-sushi-calgary";
 const PATH_REDIRECTS = {
   "/ordering": OPENTABLE,
   "/menu": "/menus/",
+  "/blank": "/",
 };
 
 export default {
